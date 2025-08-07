@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("../img/bg0.jpg") no-repeat;
+    background-size: cover;
+}
+
+h3, h2{
+    display: none;
+}
+
+/* 반응형 시작 */
+/* width 값이 1200px일 떄 */
+@media all and (max-width:1200px) {
+   body{
+    background: url("../img/bg1.jpg") no-repeat;
+   }
+}
+
+/* width 값이 768px일 때 (*/
+@media all and (max-width:768px) {
+   body{
+    background: url("../img/bg2.jpg") no-repeat;
+   }
+   h2{
+    display: block;
+   }
+   h1, h3{
+    display: none;
+   }
+}
+
+/* width 값이 390px ~768px 사이일 때 */
+@media all and (max-width:390px) {
+   body{
+    background: url("../img/bg3.jpg") no-repeat;
+   }
+   h3{
+    display: block;
+   }
+   h1, h2{
+    display: none;
+   }
+}
+
+

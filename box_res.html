@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>반응형 연습하기</title>
+    <style>
+      /* 반응형 적응시키기 위해서 사용 */
+      /* .box {
+        width: 300px;
+        width: 300px;
+        background-color: #002c5f;
+      } */
+      .box {
+        /* 반응을 50프로 지정했을 때 웹 브라우저를 50프로 줄였을 떄 반응함 */
+        width: 50%;
+        max-width: 300px;
+        min-width: 200px;
+        height: 300px;
+        background-color: #002c5f;
+      }
+
+.moble{
+    display: none;
+}
+
+      /* width 값이 300일 때 색깔 변경 */
+      @media all and (max-width: 390px) {
+        .box {
+          background-color: red;
+          border-radius: 50%;
+        }
+        .moble{
+            display: block;
+        }
+        .tablet{
+            display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <img src="./img/1.jpg" alt="시계 사진" class="tablet">
+    <img src="./img/3.jpg" alt="책 보시는 사진" class="mobile">
+  </body>
+</html>
