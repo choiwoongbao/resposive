@@ -1,0 +1,83 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* html 폰트 설정해주기 */
+html {
+  font-size: 16px;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: #d38b8b;
+}
+
+.header-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: gold;
+}
+
+/* 로고(헤더 왼쪽) */
+.logo {
+  /* 기본 16px 곱하기 1.8 */
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+
+/* 데스크탑 메뉴 */
+.nav-menu {
+    width: 100%;
+  display: flex;
+}
+
+.nav-menu li{
+    width: calc(100% / 5);
+}
+
+.auth-icons {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.auth-icon {
+  display: flex;
+}
+
+.hamburger {
+  /* display: flex; */
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  border: 0;
+  background: none;
+}
+
+/* 카테고리 메뉴(햄버거 버튼)*/
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  border-radius: 2px;
+}

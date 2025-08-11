@@ -1,0 +1,72 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.container{
+    width: 100%;
+    /* background-color: rgb(168, 166, 166); */
+}
+
+.card{
+    width: 90%;
+    max-width: 700px;
+    min-width: 270px;
+    background-color: rgb(233, 228, 228);
+    margin: auto;
+}
+
+.card > li{
+    display: flex;
+    gap: 2%;
+    align-items: center;
+}
+
+.img-box{
+    width: 60%;
+}
+
+.img-box img{
+    width: 100%;
+    display: block;
+}
+
+.card-txt{
+    width: 40%;
+    color: rgb(107, 117, 98);
+}
+
+.card1{
+    padding-bottom: 20px;
+}
+
+/* 768px일 때 글자를 밑으로 내려오게 하자 ! */
+@media (max-width:768px){
+    .card li{
+        flex-direction: column;
+    }
+    .img-box{
+        width: 100%;
+    }
+    .card-txt{
+        width: 100%;
+        padding: 2%;
+    }
+}
+
+/* 390px 때 폰트 크기를 줄이자 ! */
+@media (max-width:390px) {
+     .card-txt h3{
+        font-size: 16px;
+    }
+    .card-txt p{
+        font-size: 14px;
+    }
+}
